@@ -26,8 +26,26 @@
     .nav-link{
         background: $white;
         padding: 12px;
-        @media (min-width: 992px) {
+        @include pad{
             padding: 12px 20px;
         }
+    }
+}
+
+.change-header{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+}
+
+.change-footeer{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 20px;
+}
+
+.btn-upadte-set{
+    @include pad{
+        padding: 12px 20px;
     }
 }

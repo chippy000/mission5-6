@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>index</title>
-  <script type="module" crossorigin src="/mission5-6/assets/main-DAuMpoky.js"></script>
-  <link rel="stylesheet" crossorigin href="/mission5-6/assets/main-hGhWdM8x.css">
+  <script type="module" crossorigin src="/mission5-6/assets/main-yXkcnWWI.js"></script>
+  <link rel="stylesheet" crossorigin href="/mission5-6/assets/main-DBXhUNF1.css">
 </head>
 
 <body>
@@ -81,12 +82,12 @@
                   <!-- 主要區塊 -->
                   <div class="d-lg-flex gap-4 border-bottom pb-5 mb-5">
                     <div class="flex-shrink-0 side-width">
-                      <h2 class="fs-4 mb-3">個人資料</h2>
+                      <h2 data-aos="fade-right" data-aos-delay="100" class="fs-4 mb-3">個人資料</h2>
                     </div>
                     <!-- 右側表單 -->
                     <!-- 頭貼 -->
                     <div class="w-100">
-                      <div class="mb-4 mb-lg-5">
+                      <div data-aos="fade-left" data-aos-delay="300" class="mb-4 mb-lg-5">
                         <img src="/mission5-6/assets/avatar-QGHQ479s.png" alt="avatar" class="rounded-circle me-2">
                         <!-- 更新頭貼 -->
                         <label for="head-fileUpload"
@@ -97,14 +98,14 @@
                         <input type="file" name="head-fileUpload" id="head-fileUpload" class="d-none">
                       </div>
                       <!-- 姓名 -->
-                      <div class="mb-4 mb-lg-5">
+                      <div data-aos="fade-left" data-aos-delay="500" class="mb-4 mb-lg-5">
                         <div class="form-floating">
                           <input type="text" class="form-control" id="names" placeholder="姓名" value="Mokumaru">
                           <label for="names" class="text-natural-50">姓名</label>
                         </div>
                       </div>
                       <!-- 性別 -->
-                      <div class="mb-4 mb-lg-5">
+                      <div data-aos="fade-right" data-aos-delay="700" class="mb-4 mb-lg-5">
                         <p class="mb-2">性別</p>
                         <div class="px-2">
                           <div class="form-check form-check-inline me-4 mb-2">
@@ -124,14 +125,14 @@
                         </div>
                       </div>
                       <!-- 生日 -->
-                      <div class="mb-4 mb-lg-5">
+                      <div data-aos="flip-left" data-aos-delay="900" class="mb-4 mb-lg-5">
                         <div class="form-floating">
                           <input type="text" class="form-control" id="birthday" placeholder="生日" value="2000/01/10">
                           <label for="namebirthdays" class="text-natural-50">生日</label>
                         </div>
                       </div>
                       <!-- 密碼 -->
-                      <div class="mb-4 mb-lg-5">
+                      <div data-aos="flip-right" data-aos-delay="1100" class="mb-4 mb-lg-5">
                         <button type="button" data-bs-toggle="modal" data-bs-target="#changepassword"
                           class="btn rounded-1 rounded-lg-2  border">修改密碼<span
                             class="material-icons-outlined align-bottom">keyboard_arrow_right</span></button>
@@ -172,7 +173,7 @@
                         </div>
                       </div>
                       <!-- 信箱 -->
-                      <div class="mb-4 mb-lg-5">
+                      <div data-aos="flip-up" data-aos-delay="1300" class="mb-4 mb-lg-5">
                         <div class="form-floating">
                           <input type="mail" class="form-control" id="mail" placeholder="信箱" value="mokumaru@mail.com">
                           <label for="mail" class="text-natural-50">信箱</label>
@@ -180,14 +181,14 @@
                         <p class="text-secondary ps-2">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</p>
                       </div>
                       <!-- 聯絡電話 -->
-                      <div class="mb-4 mb-lg-5">
+                      <div data-aos="flip-down" data-aos-delay="1500" class="mb-4 mb-lg-5">
                         <div class="form-floating">
                           <input type="text" class="form-control" id="phone" placeholder="聯絡電話" value="09-1234-5678">
                           <label for="phone" class="text-natural-50">聯絡電話</label>
                         </div>
                       </div>
                       <!-- 通訊地址 -->
-                      <div class="mb-4 mb-lg-5">
+                      <div data-aos="zoom-in-right" data-aos-delay="1900" class="mb-4 mb-lg-5">
                         <div class="form-floating">
                           <input type="text" class="form-control" id="address" placeholder="通訊地址"
                             value="高雄市三民區九如一路 87 號">
@@ -197,7 +198,7 @@
                     </div>
                   </div>
                   <!-- 下方按鈕 -->
-                  <div class="d-flex flex-column-reverse flex-lg-row justify-content-lg-center">
+                  <div data-aos="zoom-in-left" data-aos-delay="2100" class="d-flex flex-column-reverse flex-lg-row justify-content-lg-center">
                     <button type="button" class="btn rounded-1 rounded-lg-2  me-lg-4 border">重新填寫<span
                         class="material-icons-outlined align-bottom">keyboard_arrow_right</span></button>
                     <button type="submit" class="btn btn-dark mb-4 mb-lg-0 rounded-1 rounded-lg-2 ">儲存更新<span
@@ -211,8 +212,8 @@
                 <h2 class="fs-4 mb-4">預約紀錄</h2>
                 <!-- 預約紀錄卡片區 -->
                 <div class="d-flex gap-4 mb-5">
-                  <div class="card w-100 d-none d-lg-block rounded-2 rounded-lg-3">
-                    <div class="card-body text-center py-4">
+                  <div class="card w-100 d-none d-lg-block">
+                    <div class="card-body text-center py-4 rounded-2 rounded-lg-3">
                       <h3 class="fs-2 fw-bold mb-2 text-primary">3</h3>
                       <p class="fs-5 text-natural-50">已完成諮詢</p>
                     </div>
@@ -826,7 +827,7 @@
                 workway. All rights reserved.</p>
         </div>
     </div>
-</footer>      
+</footer>      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

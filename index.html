@@ -6,31 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <title>index</title>
-    <script type="module" crossorigin src="/mission5-6/assets/main-B1GVaL_f.js"></script>
-    <link rel="stylesheet" crossorigin href="/mission5-6/assets/main-D8NnVcZp.css">
+    <script type="module" crossorigin src="/mission5-6/assets/main-BrtIBJgb.js"></script>
+    <link rel="stylesheet" crossorigin href="/mission5-6/assets/main-3g55TSCZ.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-3">
   <div class="container">
-    <a class="navbar-brand" href="#">
-        <img src="/mission5-6/assets/logo-CRTeTChE.svg" alt="">
+    <!-- 左：Logo -->
+    <a class="navbar-brand me-2 order-1" href="/pages/index.html">
+      <img src="/mission5-6/assets/logo-CRTeTChE.svg" alt="logo">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item me-3">
-          <a class="nav-link" aria-current="page" href="#">服務方案</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">關於職旅</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">聯絡我們</a>
-        </li>
+
+    <!-- 中：桌機置中 Nav -->
+    <div class="collapse navbar-collapse justify-content-center order-3 order-lg-2 w-100">
+      <ul class="navbar-nav d-none d-lg-flex">
+        <li class="nav-item"><a class="nav-link px-4" href="#">服務方案</a></li>
+        <li class="nav-item"><a class="nav-link px-4" href="#">關於職旅</a></li>
+        <li class="nav-item"><a class="nav-link px-4" href="#">聯絡我們</a></li>
       </ul>
-      <a class="nav-link" href="user.html"><img class="user-image rounded-circle border me-2" src="/mission5-6/assets/avatar-QGHQ479s.png" alt="user-image">Mokumaru</a>
+    </div>
+    <!-- 右：頭像 +（手機）漢堡的 Dropdown -->
+    <div class="ms-auto d-flex align-items-center order-2 order-lg-3">
+      <a href="user.html" class="d-flex align-items-center me-2">
+        <img src="/mission5-6/assets/avatar-QGHQ479s.png" alt="Mokumaru" class="user-image border rounded-circle me-2">
+        <p>Mokumaru</p>
+      </a>
+      <!-- 手機：Dropdown 模擬漢堡選單（在按鈕正下方） -->
+      <div class="dropdown d-lg-none">
+        <button class="navbar-toggler border-0" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end mt-2">
+          <li><a class="dropdown-item py-2" href="#">服務方案</a></li>
+          <li><a class="dropdown-item py-2" href="#">關於職旅</a></li>
+          <li><a class="dropdown-item py-2" href="#">聯絡我們</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
@@ -75,40 +86,31 @@
       </div>
     </div>
 
-    <footer class="bg-natural-95">
-    <nav class="navbar navbar-expand-lg navbar-light border-top">
-        <div class="container">
-            <div class="container-fluid my-5">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFooter"
-                    aria-controls="navbarFooter" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarFooter">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="#">服務方案</a>
-                        </li>
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="#">關於職旅</a>
-                        </li>
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="#">聯絡我們</a>
-                        </li>
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="#">隱私權政策</a>
-                        </li>
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="#">用戶條款</a>
-                        </li>
-                        
-                    </ul>
-                    <span class="navbar-text">
-                            Copyright © 2025 職旅 workway. All rights reserved.
-                    </span>
-                </div>
-            </div>
+    <footer class="bg-natural-95 border-top py-5">
+    <div class="container">
+        <div class="row d-flex flex-wrap flex-lg-nowrap justify-content-center">
+            <ul
+                class="col-lg-6 mb-0 footer-nav d-flex d-lg-flex flex-lg-nowrap flex-wrap align-items-lg-center justify-content-center">
+                <li class="px-4 py-2 px-lg-5">
+                    <a class="" href="#">服務方案</a>
+                </li>
+                <li class="px-4 py-2 px-lg-5">
+                    <a class="" href="#">關於職旅</a>
+                </li>
+                <li class="px-4 py-2 px-lg-5">
+                    <a class="" href="#">聯絡我們</a>
+                </li>
+                <li class="px-4 py-2 px-lg-5">
+                    <a class="" href="#">隱私權政策</a>
+                </li>
+                <li class="px-4 py-2 px-lg-5">
+                    <a class="" href="#">用戶條款</a>
+                </li>
+            </ul>
+            <p class="col-lg-6 py-2 w-auto ms-lg-auto text-natural-50 d-flex align-items-center">Copyright © 2025 職旅
+                workway. All rights reserved.</p>
         </div>
-    </nav>
+    </div>
 </footer>
   </body>
 </html>

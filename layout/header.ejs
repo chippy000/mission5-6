@@ -1,24 +1,35 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-3">
   <div class="container">
-    <a class="navbar-brand" href="#">
-        <img src="/assets/images/logo.svg" alt="">
+    <!-- 左：Logo -->
+    <a class="navbar-brand me-2 order-1" href="/pages/index.html">
+      <img src="/assets/images/logo.svg" alt="logo">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item me-3">
-          <a class="nav-link" aria-current="page" href="#">服務方案</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="#">關於職旅</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">聯絡我們</a>
-        </li>
+
+    <!-- 中：桌機置中 Nav -->
+    <div class="collapse navbar-collapse justify-content-center order-3 order-lg-2 w-100">
+      <ul class="navbar-nav d-none d-lg-flex">
+        <li class="nav-item"><a class="nav-link px-4" href="#">服務方案</a></li>
+        <li class="nav-item"><a class="nav-link px-4" href="#">關於職旅</a></li>
+        <li class="nav-item"><a class="nav-link px-4" href="#">聯絡我們</a></li>
       </ul>
-      <a class="nav-link" href="user.html"><img class="user-image rounded-circle border me-2" src="/assets/images/avatar.png" alt="user-image">Mokumaru</a>
+    </div>
+    <!-- 右：頭像 +（手機）漢堡的 Dropdown -->
+    <div class="ms-auto d-flex align-items-center order-2 order-lg-3">
+      <a href="user.html" class="d-flex align-items-center me-2">
+        <img src="/assets/images/avatar.png" alt="Mokumaru" class="user-image border rounded-circle me-2">
+        <p>Mokumaru</p>
+      </a>
+      <!-- 手機：Dropdown 模擬漢堡選單（在按鈕正下方） -->
+      <div class="dropdown d-lg-none">
+        <button class="navbar-toggler border-0" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end mt-2">
+          <li><a class="dropdown-item py-2" href="#">服務方案</a></li>
+          <li><a class="dropdown-item py-2" href="#">關於職旅</a></li>
+          <li><a class="dropdown-item py-2" href="#">聯絡我們</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

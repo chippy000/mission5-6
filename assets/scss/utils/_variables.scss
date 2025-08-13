@@ -6,7 +6,7 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-$primary-97: #F1F4FD ;
+$primary-97: #F1F4FD;
 $primary-90: #D2D9F9;
 $primary-80: #A4B4F3;
 $primary-70: #778EEE;
@@ -702,6 +702,7 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 //$h5-font-size:                $font-size-base * 1.25 !default;
 $h5-font-size:                $font-size-base * 1.125 !default;
 $h6-font-size:                $font-size-base !default;
+$h7-font-size:                $font-size-base * 0.875 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -711,7 +712,8 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1234,8 +1236,10 @@ $zindex-levels: (
 // Navs
 
 // scss-docs-start nav-variables
-$nav-link-padding-y:                .5rem !default;
-$nav-link-padding-x:                1rem !default;
+//$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-y:                0rem !default;
+//$nav-link-padding-x:                1rem !default;
+$nav-link-padding-x:                0rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
 //$nav-link-color:                    var(--#{$prefix}link-color) !default;
@@ -1288,7 +1292,8 @@ $navbar-toggler-border-radius:      $btn-border-radius !default;
 $navbar-toggler-focus-width:        $btn-focus-width !default;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
-$navbar-light-color:                rgba(var(--#{$prefix}emphasis-color-rgb), .65) !default;
+//$navbar-light-color:                rgba(var(--#{$prefix}emphasis-color-rgb), .65) !default;
+$navbar-light-color:                $black !default;
 $navbar-light-hover-color:          rgba(var(--#{$prefix}emphasis-color-rgb), .8) !default;
 $navbar-light-active-color:         rgba(var(--#{$prefix}emphasis-color-rgb), 1) !default;
 $navbar-light-disabled-color:       rgba(var(--#{$prefix}emphasis-color-rgb), .3) !default;

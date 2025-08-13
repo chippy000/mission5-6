@@ -5,10 +5,55 @@ $utilities: map-merge(
       map-get($utilities, "font-size"),
       ( responsive: true ),
     ),
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      ( responsive: true ),
+    ), 
   )
 );
 
+
+$utilities: map-merge( 
+  $utilities,
+  (
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      ( responsive: true ),
+    ), 
+  )
+);
+
+
+
+// $utilities: (
+//   "font-size": (
+//       rfs: true,
+//       property: font-size,
+//       class: fs,
+//       values: $font-sizes,
+//       responsive: true
+//     ),
+//  "rounded": (
+//       property: border-radius,
+//       class: rounded,
+//       values: (
+//         null: $border-radius,
+//         0: 0,
+//         1: $border-radius-sm,
+//         2: $border-radius,
+//         3: $border-radius-lg,
+//         4: 3rem,
+//         circle: 50%,
+//         pill: $border-radius-pill
+//       ),
+//       responsive: true
+//     )
+// );
+
+
+// scss 縮寫用法
 @mixin pad{
+    // css用法
     @media (min-width: 992px) {
         @content;        
     }
@@ -17,7 +62,6 @@ $utilities: map-merge(
 
 button{
   @include pad{
-      padding-right: 20px;
-      padding-left: 20px;
+      padding: 12px 20px;
     }
 }

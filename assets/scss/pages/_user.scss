@@ -18,34 +18,63 @@
 //     font-size: 18px;
 // }
 
-.side-width{
-    width: 300px;
+.side-width {
+    width: auto;
+    @include pad {
+        width: 300px;
+    }
 }
 
-.tab-btn-bg{
-    .nav-link{
+.tab-btn-bg {
+    .nav-link {
         background: $white;
         padding: 12px;
-        @include pad{
+
+        @include pad {
             padding: 12px 20px;
         }
     }
 }
 
-.change-header{
+.change-header {
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 24px;
 }
 
-.change-footeer{
+.change-footeer {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-right: 20px;
 }
 
-.btn-upadte-set{
-    @include pad{
+.btn-lg-pd {
+    @include pad {
         padding: 12px 20px;
     }
 }
+
+
+// .test-1{
+//     text-align: center;
+// }
+
+
+
+
+// .navbar-nav.flex-wrap .nav-item {
+//   flex: 0 0 33.333%; /* 每列最多塞三個 */
+//   text-align: center;
+//   justify-content: center;
+//   @include pad{
+//     /* lg 尺寸以上改為橫向排版 */
+//       flex: 0 0 auto;  
+//   }  
+// }
+
+// @media (min-width: 992px) {
+//   /* lg 尺寸以上改為橫向排版 */
+//   .navbar-nav.flex-wrap .nav-item {
+//     flex: 0 0 auto;
+//   }
+// }
